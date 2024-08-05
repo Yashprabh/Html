@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Registration Form</title>
+     <script type="text/javascript">
+         function validateform(){
+              var username=document.form["registration"]["username"].value;
+              var email=document.form["registration"]["email"].value;
+              var password=document.form["registration"] password.value;
+
+         
+         if(username=""||email=""||password=""){
+            alert('all fields must be filled out');
+            return false;
+          }
+ 
+        var re=/\S+@\S+\.\S+/;
+        if(!re.test(email)){
+          alert("invalid email format");
+          return false;
+      }
+        
+       if(password.length<6){
+          alert("password must be atleast 6 characters")
+          return false;
+       }
+
+       alert("registrarion successful:")
+       return true;
+   }
+
+     </script>
+</head>
+<body>
+      <h1>Registration Form</h1>
+      <form name="registration" onsubmit="return validateform()">
+          username:<input type="text" name="username"><br><br>
+          email:<input type="text" name="username"><br><br>
+          password:<input type="password" name="password"><br><br>
+          <input type="submit" value="register">
+      </form>
+</body>
+</html>
+
+       

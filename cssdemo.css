@@ -1,0 +1,33 @@
+<!Doctype html>
+<html>
+<head>
+     <title>web page with different css style</title>
+     <style>
+     h2 {
+       color:yellow;
+       font-family:Georgia,sans-serif;
+       font-size:20px;
+     }
+   
+   internal-paragraph{
+       color:red;
+       font-family:Arial,sans-serif;
+   }
+    
+    </style>
+    <link rel="stylesheet" type="text/css" href="C:\Users\Lenovo\OneDrive\Desktop\ll\external.css">
+
+</head>
+
+<body>
+<h1 style="color:lightgreen",font-family:Georgia>This is a inline Heading css</h1>
+<p style-"color:lightblue",font-family=Georgia>This is a Inline paragraph</p>
+
+<h2>This is a Internal Heading css</h2>
+<p class="internal-paragraph">This is a internal paragraph</p>
+
+<h3>This is a external Heading css</h3>
+<p class="external-paragraph">This is a external paragraph</p>
+
+</body>
+<html>
